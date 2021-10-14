@@ -20,12 +20,12 @@ function cal() {
             </div>           
             <div class="mt-3 d-flex align-content-center justify-content-center">
                 <input id="4" class="p-1 mx-5 input" type="number" min="1" max="10" value=${result[i][3]}>
-                <label for="">..</label>
+                <label for="">.</label>
                 <input id="5" class="p-1 mx-5 input" type="number" min="1" max="10" value=${result[i][4]}>                    
             </div>           
             <div class="mt-3 d-flex align-content-center justify-content-center">
                 <input id="6" class="p-1 mx-5 input" type="number" min="1" max="10" value=${result[i][5]}>
-                <label for="">..</label>
+                <label for="">.</label>
                 <input id="7" class="p-1 mx-5 input" type="number" min="1" max="10" value=${result[i][6]}>                    
             </div>           
             <div class="mt-3 d-flex align-content-center justify-content-center">
