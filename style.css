@@ -1,5 +1,9 @@
 .input{
     text-align: center;
+    
+}
+#output1{
+    color: blue;
 }
 #output2{
     font-size:larger;
