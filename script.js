@@ -40,10 +40,13 @@ function cal() {
                     number = number + "<br>"
                 }                        
             }
+            document.getElementById("output1").innerHTML = `มี ${count/9} ชุดคำตอบ ดังนี้`
+            document.getElementById("output2").innerHTML = number
+        }else{
+            document.getElementById("output1").innerHTML = `ไม่มีผลลัพธ์ที่สอดคล้อง`
         }        
     }
-    document.getElementById("output1").innerHTML = `มี ${count/9} ชุดคำตอบ ดังนี้`
-    document.getElementById("output2").innerHTML = number
+    
     
 }
 
