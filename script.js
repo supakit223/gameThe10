@@ -1,6 +1,6 @@
 function cal() {
     const numberArray = [1,2,3,4,5,6,7,8,9,10]
-    const result = getPermutation(numberArray)        
+    const result = getPermutation(numberArray)       
     let number = ""
     let count = 0
     const sum = document.getElementById("sum").value        
