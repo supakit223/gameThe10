@@ -4,12 +4,7 @@ function cal() {
     let number = ""
     let count = 0
     const sum = document.getElementById("sum").value
-
-    const inpObj = document.getElementById("sum")
-    if (!inpObj.checkValidity()) {
-        document.getElementById("alert").innerHTML = inpObj.validationMessage
-        document.getElementById("output1").classList.add("invisible")
-    }
+        
     for (let i = 0 ; i < 362880 ; i++) { 
         if(result[i][0]+result[i][1]+result[i][2] == sum && result[i][3]+result[i][4]+result[i][5] == sum && result[i][6]+result[i][7]+result[i][8] == sum
         && result[i][0]+result[i][3]+result[i][6] == sum && result[i][1]+result[i][4]+result[i][7] == sum && result[i][2]+result[i][5]+result[i][8] == sum
@@ -41,22 +36,40 @@ function cal() {
             }            
         }     
     }
-    if(count == 0 && inpObj.checkValidity()){
+    const inpObj = document.getElementById("sum")
+    if (!inpObj.checkValidity()) {
+
+        document.getElementById("alert").classList.remove("invisible")
+        document.getElementById("alert").classList.add("visible")
+        
+        document.getElementById("output1").classList.remove("visible")
+        document.getElementById("output1").classList.add("invisible")
+        document.getElementById("output2").classList.remove("visible")
+        document.getElementById("output2").classList.add("invisible")
+
+        document.getElementById("alert").innerHTML = inpObj.validationMessage
+
+        
+    }else if(count == 0) {        
         document.getElementById("output1").classList.remove("invisible")
         document.getElementById("output1").classList.add("visible")
         document.getElementById("output2").classList.remove("visible")
         document.getElementById("output2").classList.add("invisible")
+        document.getElementById("alert").classList.remove("visible")
+        document.getElementById("alert").classList.add("invisible")
+
         document.getElementById("output1").innerHTML = `ไม่มีชุดคำตอบที่สอดคล้อง`       
-    }
-    if(count != 0){
+    }else{
         document.getElementById("output1").classList.remove("invisible")
         document.getElementById("output1").classList.add("visible")
         document.getElementById("output2").classList.remove("invisible")
         document.getElementById("output2").classList.add("visible")
+        document.getElementById("alert").classList.remove("visible")
+        document.getElementById("alert").classList.add("invisible")
 
         document.getElementById("output1").innerHTML = `มี ${count/9} ชุดคำตอบ ดังนี้`
         document.getElementById("output2").innerHTML = number
-    }        
+    }    
 }
 
 function resetPage() {
