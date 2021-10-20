@@ -6,6 +6,10 @@
 }
 .input{
     text-align: center;
+    font-weight: bold;
+}
+.inputt{
+    text-align: center;    
 }
 .groupResult{    
     border-radius: 3px;
