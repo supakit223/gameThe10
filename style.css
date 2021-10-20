@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;500&display=swap');
+
+*{
+    font-family: 'Sarabun', sans-serif;
+    box-sizing: border-box;
+}
 .input{
     text-align: center;
 }
@@ -9,6 +15,15 @@
 #output1{
     color: blue;
 }
-.devby{
-    font-weight: bold;    
+.borderOfBox{
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-radius: 5px;
+    border-width: 1px;   
+    padding: 2px; 
+    margin-bottom: 3px;
+    text-align: center;    
+}
+.bg-lightblue{    
+    background-color: lightblue;
 }
