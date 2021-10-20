@@ -31,14 +31,14 @@ function cal() {
                     <input id="3" class="p-1 mx-2 input" type="number" min="1" max="10" value=${result[i][2]}>
                 </div>           
                 <div class="mt-3 d-flex align-content-center justify-content-center">
-                    <input id="4" class="p-1 mx-4 input" type="number" min="1" max="10" value=${result[i][3]}>
-                    <label class="mx-4"></label>
-                    <input id="5" class="p-1 mx-4 input" type="number" min="1" max="10" value=${result[i][4]}>                    
+                    <input id="4" class="p-1 mx-2 input" type="number" min="1" max="10" value=${result[i][3]}>
+                    <input class="invisible p-1 mx-2 input" type="number" min="1" max="10">
+                    <input id="5" class="p-1 mx-2 input" type="number" min="1" max="10" value=${result[i][4]}>                    
                 </div>           
                 <div class="mt-3 d-flex align-content-center justify-content-center">
-                    <input id="6" class="p-1 mx-4 input" type="number" min="1" max="10" value=${result[i][5]}>
-                    <label class="mx-4"></label>
-                    <input id="7" class="p-1 mx-4 input" type="number" min="1" max="10" value=${result[i][6]}>                    
+                    <input id="6" class="p-1 mx-2 input" type="number" min="1" max="10" value=${result[i][5]}>
+                    <input class="invisible p-1 mx-2 input" type="number" min="1" max="10">
+                    <input id="7" class="p-1 mx-2 input" type="number" min="1" max="10" value=${result[i][6]}>                    
                 </div>           
                 <div class="mt-3 d-flex align-content-center justify-content-center">
                     <input id="8" class="p-1 mx-2 input" type="number" min="1" max="10" value=${result[i][7]}>
